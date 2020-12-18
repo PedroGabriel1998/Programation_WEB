@@ -1,0 +1,153 @@
+<html>
+ <head>
+    <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css">
+    <meta charset="UTF-8"/>
+    <title>Sem 3 - construção do Menu</title>
+    <style>
+        body{
+            background-image: url(./Imagens/backgroungHOME.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-color: #fff;
+        }
+        h1{
+            text-indent: 60px;
+            font-family: Arial;
+            font-size: 30pt;
+            color: blue;
+        }
+        .textcorpo p{
+            font-size: 20px;
+            padding: 10px;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+            text-indent: 60px;
+        }
+        .textcorpo li{
+            padding: 0px 0px 0px 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+        }
+    </style>
+ </head>
+ <body>
+    <nav>
+        <p>Pedro Gabriel</p>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+                <li><a href = "#">Programação WEB</a>
+                <ul>
+                    <li><a href = "./Sem1.html">Semana 01</a></li>
+                    <li><a href = "./Sem2.html">Semana 02</a></li>
+                    <li><a href = "./Sem3.html">Semana 03</a></li>
+                </ul>
+                </li>
+                <li><a href = "#">TCC Senai 2020</a>
+                    <ul>
+                        <li><a href = "./BracoRobotico.html">Braço Robótico</a></li>
+                        <li><a href = "#">Eletroímã</a></li>
+                        <li><a href = "#">Mesa de Sensores</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </nav>
+    <br>
+   <h1>Semana 3</h1>
+    <div class="textcorpo">
+        <p>    
+            Avanços referentes a semana 5: 
+        </p>
+                <li>Construção de um Menu estilo DropDown;</li> 
+                <li>Imagens adaptaveis background;</li>
+                <li>tabulação e organização de textos;</li> 
+                <li>Exibir códigos e preformatações;</li> 
+                <li>Listas.</li> 
+
+        <p>    
+            Código para construção do menu: HTML.
+        </p>
+        <center> <img src = "./Imagens/CodigoMenu.png" width = "700" /></center>
+       
+        <p>
+            Código para construção do menu: css.
+        </p>
+        <pre>
+            <code style="font-size: 15px;">
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                nav{
+                    width: 100%;
+                    height: 60px;
+                    background-color: #005f84;
+                }
+                
+                nav p {
+                    font-family: Arial;
+                    color: #FFF;
+                    font-size: 24px;
+                    line-height: 55px;
+                    float: left;
+                    padding: 0px 20px;
+                }
+                
+                nav ul{
+                    float: left; 
+                }
+                
+                nav ul li{
+                    float: left;
+                    list-style: none;
+                    position: relative;
+                }
+                
+                nav ul li a{
+                    display: block;
+                    font-family: Arial;
+                    color: #FFF;
+                    font-size: 14px;
+                    padding: 22px 14px;
+                    text-decoration: none;
+                }
+                
+                nav ul li a:hover{
+                    color: #35c5ff;
+                }
+                
+                nav ul li ul{
+                    display: none;
+                    position: relative;
+                    background-color: #005f84;
+                    padding: 10px;
+                    border-radius: 0px 0px 5px 5px;
+                    position: absolute;
+                }
+                
+                nav ul li:hover ul{
+                    display: block;
+                }
+                
+                nav ul li ul li{
+                    width: 180px;
+                    border-radius: 4px;
+                }
+                
+                nav ul li ul li a{
+                    padding: 8px 14px;
+                }
+                
+                nav ul li ul li a:hover{
+                    background-color: #002b3d;
+                }
+            </code>
+        </pre>
+    </div>
+ </body>
+</html>
