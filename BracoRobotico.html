@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css">
+    <meta charset="UTF-8"/>
+    <title>TCC - Braço Robótico</title>
+    <style>
+        .imglist{
+            border: 1px solid #eee;
+            background-color: #eee;
+            display: flex;
+            width: 200px;
+        }
+        table{
+            border: 1px solid #eee;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            border: 1px solid #eee;
+            padding: 100px;
+            text-align: center;
+        }
+        .textcorpo p{
+            font-size: 20px;
+            padding: 10px;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+            text-indent: 60px;
+            text-size-adjust: 100%;
+        }
+      </style>
+ </head>
+ <body>
+  <nav>
+    <p>Pedro Gabriel</p>
+    <ul>
+        <li><a href = "index.html">Home</a></li>
+            <li><a href = "#">Programação WEB</a>
+            <ul>
+                <li><a href = "./Sem1.html">Semana 01</a></li>
+                <li><a href = "./Sem2.html">Semana 02</a></li>
+                <li><a href = "./Sem3.html">Semana 03</a></li>
+            </ul>
+            </li>
+            <li><a href = "#">TCC Senai 2020</a>
+                <ul>
+                    <li><a href = "./BracoRobotico.html">Braço Robótico</a></li>
+                    <li><a href = "#">Eletroímã</a></li>
+                    <li><a href = "#">Mesa de Sensores</a></li>
+                </ul>
+            </li>
+    </ul>
+</nav>
+<table>
+    <br>
+    <h1 style = text-align:center;>Braço Robótico</h1>
+    <br>
+    <tr>
+        <td colspan = "2"><img src = "./Imagens/Conjunto-VistaSuperior.jpg" width = " 200"/></td>
+        <td colspan = "2"><img src = "./Imagens/Conjunto-VistaLateralDireita.jpg" width = " 200"/></td>
+        <td colspan = "2"><img src = "./Imagens/Conjunto-VistaLateralEsquerda.jpg" width = " 200"/></td>
+    </tr>
+</table>
+<br>
+    <h2 style = text-indent:60px;>Desenvolvimento:<h2>
+        <br>
+    <div class="textcorpo">
+        <p>     Dados os estudos realizados, fez-se a compra dos materiais que seriam necessários para a montagem do protótipo.
+            O braço se constitui a partir de uma adaptação de um modelo já pronto, normalmente empregado em escolas técnicas para didática de alunos. 
+            Dito isso, foi-se adquirido um braço seguindo esse raciocínio, porem ao chegar, o mesmo não se encontrava em um bom estado de uso.</p> 
+        <p>     Realizou-se algumas melhorias nos sistemas de movimentação e fixação, para que assim o braço tomasse formato pronto para sua utilização. 
+            Suas principais mudanças seriam a ausência da garra, na qual fez-se uso de uma chapa suporte no lugar, onde o eletroímã se encontraria, além 
+            disto, sua fixação em um base de calha galvanizada, utilizado apenas pela praticidade com a qual conseguíamos trabalhar em cima, além de
+            fornecer a altura e sustentação necessária economizando na construção de uma base para o projeto.</p> 
+        <p>     Após fixada o braço em sua base, houve a necessidade de refazer algumas estruturas de movimentação do protótipo devido a angulação máxima
+             do braço em relação a mesa de peças. Realizou-se a construção de uma das vigas de movimentação por meio do uso de um palito plástico na região
+              de suporte a chapa de metal e o eixo de alongamento do braço para reposição das peças que faltavam no objeto comprado.</p> 
+        <p>     A mesa de detecção de peças, feita a partir de um carretel de fiação, de madeira, foi-se adquirida através de uma doação, cortou-se no 
+            formato desejado, e, com parafusos fez-se, seu suporte. Além disso, foram-se realizados furos para os quais os Ldr’s tomariam local para realizar
+             a sensibilidade de luz no ambiente de deposito dos materiais, para serem sensoriais para o modelo de movimentação.</p> 
+        <p>     Utilizou-se um sistema de divisor de tensão com resistores de 10KΩ para ligação do componente citado, onde obteve-se um sinal analógico 
+            funcionando como digital. Quando a peça cobre o sensor ldr a resistência sobe, fazendo com que atinja um valor de tensão de sinal, que é lido pelo
+             Arduíno, e convertido através de programação para ser utilizado como um dos starts do modo automático.</p>  
+        <p>     A programação, fez-se em linguagem C++, e tendo como componente de processamento o Arduíno UNO, que por sua vez realiza a leitura de nossas 
+            entradas e transmite os sinais desejados na saída de acordo com as lógicas realizadas na programação.</p>
+        <p>     Tendo em mãos todos os estudos e componentes necessários já testados, deu-se início a parte fundamental, que seria a programação.  
+            A princípio realizou-se o teste da programação do modo manual, com potenciômetros nas entradas, servindo de controle de posição. </p><br><br>
+        <p style = text-align:center;>    Continua[...] - Está página será dedicada a contrução do site referente as atividades requisitadas, sendo atualizado com as informações para tal.</p><br><br>
+    </div>    
+ </body>
+</html>
