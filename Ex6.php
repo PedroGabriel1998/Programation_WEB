@@ -14,10 +14,7 @@
           $B_Maior = $_POST["B_Maior"]; 
           $B_Menor = $_POST["B_Menor"]; 
           $Altura = $_POST["Altura"]; 
-        }
-        
-        AreaTrapezio(){
-            $area = ($B_Maior + $B_Menor) * $Altura)/2;              
+          $area = ($B_Maior + $B_Menor) * $Altura)/2; 
         }
     ?> 
   
