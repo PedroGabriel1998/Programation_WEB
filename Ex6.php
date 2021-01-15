@@ -16,10 +16,9 @@
           $Altura = $_POST["Altura"]; 
         }
         
-        function AreaTrapezio(){
+        AreaTrapezio(){
             $area = ($B_Maior + $B_Menor) * $Altura)/2;              
         }
-        AreaTrapezio();
     ?> 
   
         <h2>Calculando a area de um Trapézio:</h2> 
@@ -44,7 +43,6 @@
             echo "<h2>Area Trapezio:</h2>"; 
             echo $area; 
             echo "<br>"; 
-
         ?> 
 </body> 
   
