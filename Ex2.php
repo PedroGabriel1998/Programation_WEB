@@ -5,6 +5,18 @@
     <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
     <meta charset="UTF-8"/>
     <title>Semana 05</title>
+    <style>
+        h1{
+            font-family: Arial;
+            text-align: center;
+            font-size: 20pt;
+        }
+        h2{
+            text-indent: 30px;
+            font-family: Arial;
+            font-size: 15pt;
+        }
+    </style>
   </head>
   <body>
   <nav>
@@ -29,11 +41,9 @@
                 </li>
         </ul>
     </nav>
-    <?php 
-        // Defining variables 
+    <?php  
         $largura = $comprimento = $area = $quantidade = 0; 
-  
-        // Checking for a POST request 
+
         if (isset($_POST["submit"])) { 
           $largura = $_POST["largura"]; 
           $comprimento = $_POST["comprimento"]; 
@@ -43,8 +53,8 @@
     ?> 
     
       <br>
-      <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
       <h1>Calculando a quantidade máxima de pessoas no ambiente, dado as condições de COVID-19:</h1>
+      <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
       <br> 
       <h2>Informe as dimensões da sala:</h2> 
       <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 

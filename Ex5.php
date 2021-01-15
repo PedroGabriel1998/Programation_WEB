@@ -5,6 +5,18 @@
      <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
     <meta charset="UTF-8"/>
     <title>Semana 05</title>
+    <style>
+        h1{
+            font-family: Arial;
+            text-align: center;
+            font-size: 20pt;
+        }
+        h2{
+            text-indent: 30px;
+            font-family: Arial;
+            font-size: 15pt;
+        }
+    </style>
   
   </head>
   
@@ -31,11 +43,11 @@
                 </li>
         </ul>
     </nav>
-
-    <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
-
+    <br>    
     <h1>Imprimindo os primeiros 30 números da sequência de Fibonacci (forma estatica):</h1>
-
+    <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
+    <br>    
+    <h2>Sequência:</h2>
     <?php
 
       static $numero = 30; 

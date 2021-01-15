@@ -43,10 +43,9 @@
         </ul>
     </nav>
     <?php 
-        // Defining variables 
+
         $B_Maior = $B_Menor = $Altura = $area = $LBase = $AlturaP = $volume = 0; 
-  
-        // Checking for a POST request 
+
         if (isset($_POST["submit"])) { 
           $B_Maior = $_POST["B_Maior"]; 
           $B_Menor = $_POST["B_Menor"]; 
