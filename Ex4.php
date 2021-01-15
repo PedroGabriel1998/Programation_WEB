@@ -57,8 +57,8 @@
             $Modulo_2 = abs($B-$C);
             $Modulo_3 = abs($B-$C);
 
-            if($A > 0 && $B > 0 && $C > 0) {
-                if($Modulo_1 < $A && $A < ($B+$C) && $Modulo_2 < $B && $B < ($A+$C) && $Modulo_3 < $C && $C < ($A+$B) ) {
+            if(($A > 0) && ($B > 0) && ($C > 0)) {
+                if(($Modulo_1 < $A) && ($A < ($B+$C)) && ($Modulo_2 < $B) && ($B < ($A+$C)) && ($Modulo_3 < $C) && ($C < ($A+$B))) {
                     if($A == $B && $B == $C) {
                         $Resposta = "O triangulo é equilatero!";
                     }
@@ -71,7 +71,7 @@
                 }
             }
             else{
-                $Resposta = "Erro!!! impossivel formar um triangulo com estes valores"
+                $Resposta = "Erro!!! impossivel formar um triangulo com estes valores";
             }
         }
     ?> 
