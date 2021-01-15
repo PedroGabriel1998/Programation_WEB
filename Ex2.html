@@ -40,26 +40,8 @@
       <label for="comprimento"> Comprimento </label><br>
       <input type="number" id="comprimento" name = "comprimento" value = $comprimento><br>
       <br/>
-
       <input type="submit" value = "Calcular">
-
+      <br/>
     </form>
-
-    <br/>
-            
-    <?php
-      function qtdAlunos($l, $c){
-        $area = $l * $c;
-        $qtd = floor($area / 2.25);
-        echo "A quantidade de alunos possíveis nessa sala, respeitando o espaço de 2,25 m² para cada <br> um é de <b>$qtd</b>.";                
-      }
-
-      #lê os valores
-
-      $largura = $_POST["largura"];
-      $comprimento = $_POST["comprimento"];
-      qtdAlunos($largura, $comprimento);
-
-    ?>
   </body>
 </html>
