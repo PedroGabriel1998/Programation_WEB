@@ -33,6 +33,7 @@
         </ul>
     </nav>
   -->
+    <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
     <h1>Calculando a quantidade máxima de pessoas no ambiente, dado as condições de COVID-19:</h1>
     <form name="CalculoCovid" method = "post" action = "Ex2.php" >
       <label for="largura"> Largura </label><br>

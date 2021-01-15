@@ -33,6 +33,7 @@
         </ul>
     </nav>
   -->
+    <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
     <h1>Calculando o consumo de um veiculo que anda 55KM com 5 Litros de gasolina:</h1>
     
     <?php
