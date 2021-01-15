@@ -35,7 +35,8 @@
     <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
 
     <h1>Calculando a area de um Trapézio:</h1>
-    <form name="trapezio" method = "post">
+    
+    <form name="trapezio" method = "post" action = "Ex3.php">
       <label for="B_Maior"> Base Maior:</label><br>
       <input type="number" id="B_Maior" name = "B_Maior" value = "$B_Maior"><br>
       <label for="B_Menor"> Base Menor: </label><br>
