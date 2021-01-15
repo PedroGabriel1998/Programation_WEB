@@ -50,6 +50,8 @@
       <br/>
     </form>
 
+    <br/>
+
     <?php
         function AreaTrapezio($B_Maior, $B_Menor, $Altura){
             $area = ($B_Maior + $B_Menor) * $Altura)/2;
@@ -61,7 +63,7 @@
         $B_Maior = $_POST["B_Maior"];
         $B_Menor = $_POST["B_Menor";
         $Altura = $_POST["Altura";
-        AreaTrapezio($B_Maior, $B_Maior);
+        AreaTrapezio($B_Maior, $B_Maior, $Altura);
 
     ?>
   </body>
