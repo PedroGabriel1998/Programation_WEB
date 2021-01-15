@@ -49,20 +49,5 @@
       <input type="submit" value = "Calcular">
       <br/>
     </form>
-
-    <?php
-        function AreaTrapezio($B_Maior, $B_Menor, $Altura){
-            $area = ($B_Maior + $B_Menor) * $Altura)/2;
-            echo "A area deste trapézio é <b>$area</b>.";                
-        }
-
-        #lê os valores
-
-        $B_Maior = $_POST["B_Maior"];
-        $B_Menor = $_POST["B_Menor";
-        $Altura = $_POST["Altura";
-        AreaTrapezio($B_Maior, $B_Maior);
-
-    ?>
   </body>
 </html>
