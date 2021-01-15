@@ -10,7 +10,7 @@
         $B_Maior = $B_Menor = $Altura = $area = ""; 
   
         // Checking for a POST request 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+        if (isset($_POST["submit"] )) { 
           $B_Maior = $_POST["B_Maior"]; 
           $B_Menor = $_POST["B_Menor"]; 
           $Altura = $_POST["Altura"]; 
@@ -33,7 +33,7 @@
             <input type="text" name="Altura"> 
             <br> 
             <br>  
-            <input type="submit" value = "Calcular">
+            <input type="submit" value = "Calcular" name="submit">
         </form> 
   
         <?php 
