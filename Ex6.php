@@ -11,20 +11,13 @@
   
         // Checking for a POST request 
         if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-          $name = test_input($_POST["name"]); 
-          $email = test_input($_POST["email"]); 
-          $review = test_input($_POST["review"]); 
-          $level = test_input($_POST["level"]); 
+          $name = $_POST["name"]; 
+          $email = $_POST["email"]; 
+          $review = $_POST["review"]; 
+          $level = $_POST["level"]; 
         } 
   
-        // Removing the redundant HTML characters if any exist. 
-        function test_input($data) { 
-          $data = trim($data); 
-          $data = stripslashes($data); 
-          $data = htmlspecialchars($data); 
-          return $data; 
-        } 
-        ?> 
+    ?> 
   
         <h2>PHP Form Example: GFG Review</h2> 
         <form method="post" action= 
