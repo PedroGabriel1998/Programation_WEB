@@ -61,8 +61,8 @@
         #lê os valores
 
         $B_Maior = $_POST["B_Maior"];
-        $B_Menor = $_POST["B_Menor";
-        $Altura = $_POST["Altura";
+        $B_Menor = $_POST["B_Menor"];
+        $Altura = $_POST["Altura"];
         AreaTrapezio($B_Maior, $B_Maior, $Altura);
 
     ?>
