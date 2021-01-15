@@ -10,11 +10,11 @@
         $B_Maior = $B_Menor = $Altura = $area = ""; 
   
         // Checking for a POST request 
-        if (isset($_POST["submit"] )) { 
+        if (isset($_POST["submit"])) { 
           $B_Maior = $_POST["B_Maior"]; 
           $B_Menor = $_POST["B_Menor"]; 
           $Altura = $_POST["Altura"]; 
-          $area = ($B_Maior + $B_Menor) * $Altura)/2; 
+          //$area = ($B_Maior + $B_Menor) * $Altura)/2; 
         }
     ?> 
   
