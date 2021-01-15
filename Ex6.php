@@ -7,14 +7,14 @@
 <body> 
     <?php 
         // Defining variables 
-        $B_Maior = $B_Menor = $Altura = $area = ""; 
+        $B_Maior = $B_Menor = $Altura = $area = 0; 
   
         // Checking for a POST request 
         if (isset($_POST["submit"])) { 
           $B_Maior = $_POST["B_Maior"]; 
           $B_Menor = $_POST["B_Menor"]; 
           $Altura = $_POST["Altura"]; 
-          //$area = ($B_Maior + $B_Menor) * $Altura)/2; 
+          $area = (($B_Maior + $B_Menor) * $Altura)/2; 
         }
     ?> 
   
@@ -38,7 +38,7 @@
   
         <?php 
             echo "<h2>Area Trapezio:</h2>"; 
-            echo $Altura; 
+            echo $area; 
             echo "<br>"; 
         ?> 
 </body> 
