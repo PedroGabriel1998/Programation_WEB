@@ -38,7 +38,7 @@
   
         <?php 
             echo "<h2>Area Trapezio:</h2>"; 
-            echo $area; 
+            echo $Altura; 
             echo "<br>"; 
         ?> 
 </body> 
