@@ -47,5 +47,5 @@
             echo "A area deste trapézio é <b>$area</b>.";                
         }
     ?>
-  </body>
+    </body>
 </html>
