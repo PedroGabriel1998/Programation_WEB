@@ -7,15 +7,14 @@
     <title>Semana 05 - EX3</title>
     <style>
         h1{
-            text-indent: 60px;
             font-family: Arial;
             text-align: center;
-            font-size: 30pt;
+            font-size: 20pt;
         }
         h2{
-            text-indent: 60px;
+            text-indent: 30px;
             font-family: Arial;
-            font-size: 30pt;
+            font-size: 15pt;
         }
     </style>
 </head> 
