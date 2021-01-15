@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <meta charset="UTF-8"/>
- <!--
  <head>
-     <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
+    <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
     <meta charset="UTF-8"/>
     <title>Semana 05</title>
-  -->
   </head>
   <body>
-  <!--
-    <nav>
+  <nav>
         <p>Pedro Gabriel</p>
         <ul>
             <li><a href = "index.html">Home</a></li>
@@ -32,35 +29,42 @@
                 </li>
         </ul>
     </nav>
-  -->
-    <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
-    <h1>Calculando a quantidade máxima de pessoas no ambiente, dado as condições de COVID-19:</h1>
-    <form name="CalculoCovid" method = "post" action = "Ex2.php" >
-      <label for="largura"> Largura </label><br>
-      <input type="number" id="largura" name = "largura" value = $largura><br>
-      <label for="comprimento"> Comprimento </label><br>
-      <input type="number" id="comprimento" name = "comprimento" value = $comprimento><br>
-      <br/>
-
-      <input type="submit" value = "Calcular">
-
-    </form>
-
-    <br/>
-            
-    <?php
-      function qtdAlunos($l, $c){
-        $area = $l * $c;
-        $qtd = floor($area / 2.25);
-        echo "A quantidade de alunos possíveis nessa sala, respeitando o espaço de 2,25 m² para cada <br> um é de <b>$qtd</b>.";                
-      }
-
-      #lê os valores
-
-      $largura = $_POST["largura"];
-      $comprimento = $_POST["comprimento"];
-      qtdAlunos($largura, $comprimento);
-
-    ?>
+    <?php 
+        // Defining variables 
+        $largura = $comprimento = $area = $quantidade = 0; 
+  
+        // Checking for a POST request 
+        if (isset($_POST["submit"])) { 
+          $largura = $_POST["largura"]; 
+          $comprimento = $_POST["comprimento"]; 
+          $area = $largura * $comprimento;
+          $quantidade = floor($area / 2.25);
+        }
+    ?> 
+    
+      <br>
+      <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
+      <h1>Calculando a quantidade máxima de pessoas no ambiente, dado as condições de COVID-19:</h1>
+      <br> 
+      <h2>Informe as dimensões da sala:</h2> 
+      <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
+        Largura: 
+        <input type="number" name="largura"> 
+        <br> 
+        <br>  
+        Comprimento: 
+        <input type="number" name="comprimento"> 
+        <br> 
+        <br> 
+        <input type="submit" value = "Calcular" name="submit">
+      </form> 
+      <br> 
+  
+    <?php 
+      echo "<br>"; 
+      echo "<h2>Quantidade máxima de alunos respeitando os 2,25 m² de distanciamento mínimo:</h2>"; 
+      echo $quantidade; 
+       echo "<br>"; 
+    ?> 
   </body>
 </html>

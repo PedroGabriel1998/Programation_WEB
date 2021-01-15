@@ -23,7 +23,7 @@
     <nav>
         <p>Pedro Gabriel</p>
         <ul>
-            <a href = "index.html">Home</a>
+        <li><a href = "index.html">Home</a><li>
                 <li><a href = "#">Programação WEB</a>
                 <ul>
                     <li><a href = "./Sem1.html">Semana 01</a></li>
@@ -77,7 +77,7 @@
     ?> 
         <br>
         <h1>Verificando o tipo de um triangulo.</h1> 
-        <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
+        <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
         <br> 
         <h2>Informe as dimensões da figura:</h2> 
         <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 

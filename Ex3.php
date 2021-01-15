@@ -59,7 +59,7 @@
     ?> 
         <br>
         <h1>Calculando area para um Trapézio e volume de uma Piramide.</h1> 
-        <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
+        <a href = "./Sem5.html">Voltar para a lista de exercicios</a>
         <br> 
         <h2>Calculando area para um Trapézio:</h2> 
         <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
