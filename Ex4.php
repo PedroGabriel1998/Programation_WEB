@@ -23,7 +23,7 @@
     <nav>
         <p>Pedro Gabriel</p>
         <ul>
-            <li><a href = "index.html">Home</a></li>
+            <a href = "index.html">Home</a>
                 <li><a href = "#">Programação WEB</a>
                 <ul>
                     <li><a href = "./Sem1.html">Semana 01</a></li>
@@ -44,62 +44,64 @@
     </nav>
     <?php 
         // Defining variables 
-        $B_Maior = $B_Menor = $Altura = $area = $LBase = $AlturaP = $volume = 0; 
+        $A = $B = $C = $Modulo_1 = $Modulo_2 = $Modulo_3 = 0; 
+        $Resposta = " ";
   
         // Checking for a POST request 
         if (isset($_POST["submit"])) { 
-          $B_Maior = $_POST["B_Maior"]; 
-          $B_Menor = $_POST["B_Menor"]; 
-          $AlturaT = $_POST["AlturaT"]; 
-          $LBase = $_POST["LBase"]; 
-          $AlturaP = $_POST["AlturaP"]; 
-          $area = (($B_Maior + $B_Menor) * $AlturaT)/2; 
-          $volume = (($LBase + $LBase) * $AlturaP)/3; 
+            $A = $_POST["A"]; 
+            $B = $_POST["B"]; 
+            $C = $_POST["C"]; 
+
+            $Modulo_1 = abs($B-$C);
+            $Modulo_2 = abs($B-$C);
+            $Modulo_3 = abs($B-$C);
+
+            if($A > 0 && $B > 0 && $C > 0) {
+                if($Modulo_1 < $A && $A < ($B+$C) && $Modulo_2 < $B && $B < ($A+$C) && $Modulo_3 < $C && $C < ($A+$B) ) {
+                    if($A == $B && $B == $C) {
+                        $Resposta = "O triangulo é equilatero!";
+                    }
+                    else if($A == $B || $A == $C || $B == $C) {
+                        $Resposta = "O triangulo é isoceles!";
+                    }
+                    else {
+                        $Resposta = "O triangulo é escaleno!!";
+                    }
+                }
+            }
+            else{
+                $Resposta = "Erro!!! impossivel formar um triangulo com estes valores"
+            }
         }
     ?> 
         <br>
-        <h1>Calculando area para um Trapézio e volume de uma Piramide.</h1> 
+        <h1>Verificando o tipo de um triangulo.</h1> 
         <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
         <br> 
-        <h2>Calculando area para um Trapézio:</h2> 
+        <h2>Informe as dimensões da figura:</h2> 
         <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
-            Base Maior: 
-            <input type="number" name="B_Maior"> 
+            Lado A: 
+            <input type="number" name="A"> 
             <br> 
             <br>  
-            Base Menor: 
-            <input type="number" name="B_Menor"> 
+            Lado B: 
+            <input type="number" name="B"> 
             <br> 
             <br> 
-            Altura do Trapézio: 
-            <input type="number" name="AlturaT"> 
+            Lado C: 
+            <input type="number" name="C"> 
             <br> 
             <br>  
-            <input type="submit" value = "Calcular" name="submit">
+            <input type="submit" value = "Verificar" name="submit">
         </form> 
         <br> 
-        <h2>Calculando volume para uma Piramide:</h2>
-        <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
-            Lado da base quadrada: 
-            <input type="number" name="LBase"> 
-            <br> 
-            <br>  
-            Altura da Piramide: 
-            <input type="number" name="AlturaP"> 
-            <br> 
-            <br>  
-            <input type="submit" value = "Calcular" name="submit">
-        </form> 
   
         <?php 
             echo "<br>"; 
-            echo "<h2>Area Trapezio:</h2>"; 
-            echo $area; 
+            echo "<h2>Este triangulo é do tipo:</h2>"; 
+            echo $Resposta; 
             echo "<br>"; 
-            echo "<br>"; 
-            echo "<h2>Volume Piramide:</h2>"; 
-            echo $volume; 
-            echo "<br>";
         ?> 
 </body> 
   
