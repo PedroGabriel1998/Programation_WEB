@@ -20,7 +20,7 @@
   
         <h2>Calculando a area de um Trapézio:</h2> 
         <form method="post" action= 
-            "<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>"> 
+            "<?php echo $_SERVER[" PHP_SELF "];?>"> 
             Base Maior: 
             <input type="number" name="B_Maior"> 
             <br> 
