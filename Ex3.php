@@ -34,27 +34,31 @@
 
     <li><a href = "./Sem5.html">Voltar para a lista de exercicios</a></li>
 
-    <h1>Imprimindo os primeiros 30 números da sequência de Fibonacci (forma estatica):</h1>
+    <h1>Calculando a area de um Trapézio:</h1>
+    <form name="trapezio" method = "post">
+      <label for="B_Maior"> Base Maior:</label><br>
+      <input type="number" id="B_Maior" name = "B_Maior" value = "$B_Maior"><br>
+      <label for="B_Menor"> Base Menor: </label><br>
+      <input type="number" id="B_Menor" name = "B_Menor" value = "$B_Menor"><br>
+      <label for="B_Menor"> Altura: </label><br>
+      <input type="number" id="Altura" name = "Altura" value = "$Altura"><br>
+      <br/>
+      <input type="submit" value = "Calcular">
+      <br/>
+    </form>
 
     <?php
-
-      static $numero = 30; 
-
-      function fibonacci($numero){ //metodo recursivo para fibonacci
-        if ($numero == 0) {
-          return 0;     
-        } 
-        elseif ($numero == 1) {
-          return 1;     
-        } 
-        else {
-          return (fibonacci($numero-1) + fibonacci($numero-2)); 
+        function AreaTrapezio($B_Maior, $B_Menor, $Altura){
+            $area = ($B_Maior + $B_Menor) * $Altura)/2;
+            echo "A area deste trapézio é <b>$area</b>.";                
         }
-      } 
 
-      for ($contador = 0; $contador < $numero; $contador++){   
-        echo fibonacci($contador),' '; 
-      } 
+        #lê os valores
+
+        $B_Maior = $_POST["B_Maior"];
+        $B_Menor = $_POST["B_Menor";
+        $Altura = $_POST["Altura";
+        AreaTrapezio($B_Maior, $B_Maior);
 
     ?>
   </body>

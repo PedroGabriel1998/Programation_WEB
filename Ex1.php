@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+<meta charset="UTF-8"/>
  <!--
  <head>
      <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
