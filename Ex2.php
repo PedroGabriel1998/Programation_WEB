@@ -34,15 +34,33 @@
     </nav>
   -->
     <h1>Calculando o consumo de um veiculo que anda 55KM com 5 Litros de gasolina:</h1>
-    
-    <?php
+    <form action="exerc2.php" method="post">
+                <label for="largura"> Largura </label><br>
+                <input type="number" id="largura" name="largura" value="10"><br>
+                <label for="comprimento"> Comprimento </label><br>
+                <input type="number" id="comprimento" name="comprimento" value="10"><br>
+                <br>
 
-      static $Quilometros = 55;
-      static $litros = 5;
+                <input type="submit" value="Calcular">
 
-      $consumer = $Quilometros/$litros;
+            </form>
 
-      echo "O consumo é de ", $consumer, " km/L";
+
+            <br />
+            
+            <?php
+               function qtdAlunos($l, $c){
+                   $area = $l * $c;
+                   $qtd = floor($area / 2.25);
+                   echo "A quantidade de alunos possíveis nessa sala, respeitando o espaço de 2,25 m² para cada <br> um é de <b>$qtd</b>.";                
+              }
+
+                #lê os valores
+
+                $largura = $_POST['largura'];
+                $comprimento = $_POST['comprimento'];
+                qtdAlunos($largura, $comprimento);
+
     ?>
   </body>
 </html>
