@@ -5,6 +5,19 @@
     <link href = "EstiloDropDown.css" rel = "stylesheet" type = "text/css"> 
     <meta charset="UTF-8"/>
     <title>Semana 05 - EX3</title>
+    <style>
+        h1{
+            text-indent: 60px;
+            font-family: Arial;
+            text-align: center;
+            font-size: 30pt;
+        }
+        h2{
+            text-indent: 60px;
+            font-family: Arial;
+            font-size: 30pt;
+        }
+    </style>
 </head> 
   
 <body> 
@@ -46,6 +59,7 @@
         }
     ?> 
         <h1>Calculando area para um Trapézio e volume de uma Piramide.</h1> 
+        <br> 
         <h2>Calculando area para um Trapézio:</h2> 
         <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
             Base Maior: 
@@ -62,6 +76,7 @@
             <br>  
             <input type="submit" value = "Calcular" name="submit">
         </form> 
+        <br> 
         <h2>Calculando volume para uma Piramide:</h2>
         <form method="post" action= "<?php echo $_SERVER[" PHP_SELF "];?>"> 
             Lado da base quadrada: 
@@ -76,8 +91,10 @@
         </form> 
   
         <?php 
+            echo "<br>"; 
             echo "<h2>Area Trapezio:</h2>"; 
             echo $area; 
+            echo "<br>"; 
             echo "<br>"; 
             echo "<h2>Volume Piramide:</h2>"; 
             echo $volume; 
