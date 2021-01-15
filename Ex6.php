@@ -7,7 +7,7 @@
 <body> 
     <?php 
         // Defining variables 
-        $B_Maior = $B_Menor = $Altura = $area = 0; 
+        $B_Maior = $B_Menor = $Altura = $area = ""; 
   
         // Checking for a POST request 
         if ($_SERVER["REQUEST_METHOD"] == "POST") { 
