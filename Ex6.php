@@ -7,57 +7,44 @@
 <body> 
     <?php 
         // Defining variables 
-        $name = $email = $level = $review = ""; 
+        $B_Maior = $B_Menor = $Altura = $area = 0; 
   
         // Checking for a POST request 
         if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-          $name = $_POST["name"]; 
-          $email = $_POST["email"]; 
-          $review = $_POST["review"]; 
-          $level = $_POST["level"]; 
-        } 
-  
+          $B_Maior = $_POST["B_Maior"]; 
+          $B_Menor = $_POST["B_Menor"]; 
+          $Altura = $_POST["Altura"]; 
+        }
+        
+        function AreaTrapezio(){
+            $area = ($B_Maior + $B_Menor) * $Altura)/2;              
+        }
+        AreaTrapezio();
     ?> 
   
-        <h2>PHP Form Example: GFG Review</h2> 
+        <h2>Calculando a area de um Trapézio:</h2> 
         <form method="post" action= 
             "<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>"> 
-            Name: 
-            <input type="text" name="name"> 
+            Base Maior: 
+            <input type="number" name="B_Maior"> 
             <br> 
             <br>  
-            E-mail: 
-            <input type="text" name="email"> 
+            Base Menor: 
+            <input type="text" name="B_Menor"> 
             <br> 
             <br> 
-            Review For GFG: 
-            <textarea name="review" 
-                      rows="5" cols="40"> 
-            </textarea> 
+            Altura: 
+            <input type="text" name="Altura"> 
             <br> 
             <br>  
-            Satisfaction Level: 
-            <input type="radio" name="level" 
-                   value="Bad">Bad 
-            <input type="radio" name="level"
-                   value="Average">Average 
-            <input type="radio" name="level"
-                   value="Good">Good 
-            <br> 
-            <br> 
-            <input type="submit" name="submit"
-                   value="Submit"> 
+            <input type="submit" value = "Calcular">
         </form> 
   
         <?php 
-            echo "<h2>Your Input:</h2>"; 
-            echo $name; 
+            echo "<h2>Area Trapezio:</h2>"; 
+            echo $area; 
             echo "<br>"; 
-            echo $email; 
-            echo "<br>"; 
-            echo $review; 
-            echo "<br>"; 
-            echo $level; 
+
         ?> 
 </body> 
   
