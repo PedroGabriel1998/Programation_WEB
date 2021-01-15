@@ -34,7 +34,7 @@
     </nav>
   -->
     <h1>Calculando a quantidade máxima de pessoas no ambiente, dado as condições de COVID-19:</h1>
-    <form name="CalculoCovid" method = "post" action = "Ex5.php" >
+    <form name="CalculoCovid" method = "post" action = "Ex2.php" >
       <label for="largura"> Largura </label><br>
       <input type="number" id="largura" name = "largura" value = $largura><br>
       <label for="comprimento"> Comprimento </label><br>
