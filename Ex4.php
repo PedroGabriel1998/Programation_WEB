@@ -43,11 +43,10 @@
         </ul>
     </nav>
     <?php 
-        // Defining variables 
+
         $A = $B = $C = $Modulo_1 = $Modulo_2 = $Modulo_3 = 0; 
         $Resposta = " ";
   
-        // Checking for a POST request 
         if (isset($_POST["submit"])) { 
             $A = $_POST["A"]; 
             $B = $_POST["B"]; 
@@ -68,6 +67,9 @@
                     else {
                         $Resposta = "O triangulo é escaleno!!";
                     }
+                }
+                else{
+                    $Resposta = "Erro!!! impossivel formar um triangulo com estes valores";
                 }
             }
             else{
