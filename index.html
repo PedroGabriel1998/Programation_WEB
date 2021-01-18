@@ -10,11 +10,48 @@
     <title>WEB - Pedro Gabriel da Silva</title>
 
     <style>
-        body{
-            background-image: url(./Imagens/backgroungHOME.jpg);
-            background-attachment: fixed;
-            background-size: 100%;
-            background-color: #fff;
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;    
+        }
+        .text{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 5rem;
+            color: #fff;
+            border: 3px solid #fff;
+            padding:  2rem 4rem;
+            text-align: center;
+        }
+        .gradient{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgba(50,50,50);
+            background: linear-gradient(45deg,#e94560, #11698e, #19456b, #19c79a);
+            background-size: 400% 400%;
+            animation: colors 15s ease infinite;
+        }
+
+        @keyframes colors {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .text {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            }
         }
         h1{
             font-family: Arial;
@@ -30,40 +67,47 @@
             font-family: Arial;
             font-size: 20pt;
             text-align: center;
-            color: red;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <p>Pedro Gabriel</p>
-        <ul>
-            <li><a href = "index.html">Home</a></li>
-                <li><a href = "#">Programação WEB</a>
-                <ul>
-                    <li><a href = "./Sem1.html">Semana 01</a></li>
-                    <li><a href = "./Sem2.html">Semana 02</a></li>
-                    <li><a href = "./Sem3.html">Semana 03</a></li>
-                    <li><a href = "./Sem4.html">Semana 04</a></li>
-                    <li><a href = "./Sem5.html">Semana 05</a></li>
-                </ul>
-                </li>
-                <li><a href = "#">TCC Senai 2020</a>
+    <div class="menu">
+        <nav>
+            <p>Pedro Gabriel</p>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                    <li><a href = "#">Programação WEB</a>
                     <ul>
-                        <li><a href = "./BracoRobotico.html">Braço Robótico</a></li>
-                        <li><a href = "#">Eletroímã</a></li>
-                        <li><a href = "#">Mesa de Sensores</a></li>
+                        <li><a href = "./Sem1.html">Semana 01</a></li>
+                        <li><a href = "./Sem2.html">Semana 02</a></li>
+                        <li><a href = "./Sem3.html">Semana 03</a></li>
+                        <li><a href = "./Sem4.html">Semana 04</a></li>
+                        <li><a href = "./Sem5.html">Semana 05</a></li>
                     </ul>
-                </li>
-        </ul>
-    </nav>
-    <br>
-    <h1>Seja bem vindo!</h1>
-    <br><br><br>
-    <h2> Ao longo deste site seram exibidos os exercicios desenvolvidos na materia de Programação WEB + outros conteudos realizados por mim.</h2>
-    <br><br><br>
-    <h3>Navegue pelo menu acima e acesse os conteudos!</h3>
+                    </li>
+                    <li><a href = "#">TCC Senai 2020</a>
+                        <ul>
+                            <li><a href = "./BracoRobotico.html">Braço Robótico</a></li>
+                            <li><a href = "#">Eletroímã</a></li>
+                            <li><a href = "#">Mesa de Sensores</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+       
+    <div class="gradient">
+        <div class="text">
+            <br>
+            <h1>Seja bem vindo!</h1>
+            <br>
+            <h2> Ao longo deste site seram exibidos os exercicios desenvolvidos na materia de Programação WEB + outros conteudos realizados por mim.</h2>
+            <br>
+        
+            <h3>Navegue pelo menu acima e acesse os conteudos!</h3>
+        </div>
+    </div>
 </body>
 
 </html>
